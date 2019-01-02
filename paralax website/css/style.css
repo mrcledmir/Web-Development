@@ -1,0 +1,268 @@
+body, html{
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family:"Lato", "sans serif";
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #666;
+}
+
+.pimg1, .pimg2, .pimg3{
+  position: relative;
+  opacity: 0.70;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;/* this adds the parralax effects*/
+}
+
+.pimg1{
+  background-image: url(../img/motorcycle1.jpeg);
+  min-height: 100%;
+}
+
+.pimg2{
+  background-image: url(../img/motorcycle2.jpeg);
+  min-height: 400px;
+}
+.pimg3{
+  background-image: url(../img/motorcycle3.jpeg);
+  min-height: 400px;
+}
+
+.section{
+  text-align: center;
+  padding: 50px 80px;
+}
+
+.section-light{
+  background-color: #f4f4f4;
+  color:#666;
+}
+
+.section-dark{
+  background-color: #282e34;
+  color:#ddd;
+}
+
+.ptext{
+  position: absolute;
+  top:50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 27px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.ptext .border
+{
+ background-color: #111;
+ color: white;
+ padding: 20px;
+}
+
+.ptext .border.trans{
+  background-color: transparent;
+}
+
+/* Social widgets*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+footer {
+  background-color: #222;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+  font-family: "Genericons";
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/53819/genericons-regular-webfont.eot");
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/53819/genericons-regular-webfont.woff")
+      format("woff"),
+    url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/53819/genericons-regular-webfont.eot")
+      format("truetype");
+}
+
+.container {
+  margin: 0px auto;
+  width: 90%;
+}
+
+header h1 {
+  color: #fff;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.accordion {
+  background: #333;
+  width: 100%;
+  min-width: 800px;
+  display: block;
+  list-style-type: none;
+  overflow: hidden;
+  height: 200px;
+  font-size: 0;
+}
+
+.tab {
+  display: inline-block;
+  background-color: #444;
+  border-right: #333 1px solid;
+  width: 80px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+  transition: all 0.5s ease-in-out 0.1s;
+}
+
+.tab:hover {
+  width: 450px;
+}
+
+.tab:hover .social a:before {
+  margin-left: -100px;
+}
+
+.tab:hover .social a:after {
+  margin-left: -5px;
+}
+
+.tab .content {
+  background: #fff;
+  width: 360px;
+  height: 200px;
+  margin-left: 80px;
+  padding: 50px 0 0 15px;
+  position: relative;
+}
+
+.tab .content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.tab .content p {
+  font-size: 0.85rem;
+  line-height: 1.4rem;
+  padding-right: 30px;
+}
+
+.social a:after,
+.social a:before {
+  transition: all 0.4s ease-in-out 0.1s;
+  width: 80px;
+  height: 200px;
+  position: absolute;
+  text-indent: 0;
+  padding-top: 90px;
+  padding-left: 25px;
+  display: block;
+  font: normal 30px Genericons;
+  color: #fff;
+}
+
+.social a:after {
+  font-size: 48px;
+  padding-left: 20px;
+  padding-top: 80px;
+  margin-left: 85px;
+}
+
+.youtube a:before,
+.youtube a:after {
+  content: "\f213";
+}
+.youtube a:after {
+  background-color: #ff0000;
+}
+
+.twitter a:before,
+.twitter a:after {
+  content: "\f202";
+}
+.twitter a:after {
+  background-color: #6dc5dd;
+}
+
+.facebook a:before,
+.facebook a:after {
+  content: "\f204";
+}
+.facebook a:after {
+  background-color: #3b5998;
+}
+
+.linkedin a:before,
+.linkedin a:after {
+  content: "\f208";
+}
+.linkedin a:after {
+  background-color: #00a9cd;
+}
+
+.instagram a:before,
+.instagram a:after {
+  content: "\f215";
+}
+.instagram a:after {
+  background-color: #6dc993;
+}
+
+.github a:before,
+.github a:after {
+  content: "\f200";
+}
+.github a:after {
+  background-color: #6e5494;
+}
+
+@media (max-width: 950px) {
+  .container {
+    width: 70%;
+  }
+
+  .tab {
+    display: block;
+    width: 100%;
+    border-bottom: 3px #333 solid;
+  }
+
+  .accordion {
+    display: block;
+    min-width: 450px;
+    height: auto;
+  }
+
+  .tab .content {
+    width: 85%;
+  }
+
+  .tab:hover {
+    width: 100%;
+  }
+}
+
+@media (max-width: 680px) {
+  .container {
+    width: 95%;
+  }
+
+  .accordion {
+    width: 100%;
+    min-width: 350px;
+  }
+}
