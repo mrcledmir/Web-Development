@@ -1,0 +1,177 @@
+body{
+  background-color: #00F2FF;
+  margin:60px;
+  font-family: "sans-serif", arial;
+  font-weight: 300;
+  overflow: auto;
+}
+
+/*NavBar*/
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+
+nav{
+  float:right;
+}
+
+nav ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li{
+  display:inline-block;
+  margin-left: 45px;
+  position: relative;
+}
+
+nav a{
+  color:#0331A6;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+nav a:hover{
+  color: #F04A58;
+}
+
+nav a:before{
+  content: '';
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: #F04A58;
+  position: absolute;
+  top:0;
+  width: 0;
+  transition: all ease-in-out 200ms;
+}
+
+nav a:hover::before{
+  width: 100%;
+}
+
+hr{
+  display: block;
+   margin-top: 0.5em;
+   margin-bottom: 0.5em;
+   margin-left: auto;
+   margin-right: auto;
+   border-style: inset;
+   border-width: 1px;
+}
+
+/*landing Page*/
+.landing{
+  text-align: center;
+  float: left;
+  margin-top: 250px;
+  margin-left: 200px;
+  position: absolute;
+}
+
+.landing > h1{
+  font-size: 70px;
+  color: #0331A6;
+}
+
+.landing > button{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background: none;
+  color: #0331A6;
+  width: 200px;
+  height: 60px;
+  border: 2px solid #F04A58;
+  border-radius: 15px;
+  transition: .6s;
+  overflow: hidden;
+  font-size: 20px;
+}
+
+button:focus{
+  outline: none;
+}
+
+button:before{
+  content: '';
+  display: block;
+  position: absolute;
+  background: #F04A58;
+  width: 60px;
+  height:100%;
+  left: 0;
+  top:0;
+  opacity: .5s;
+  filter: blur(30px);
+  transform: translateX(-130px) skewX(-15deg);
+}
+
+button:after{
+  content: '';
+  display: block;
+  position: absolute;
+  background: #F04A58;
+  width: 30px;
+  height:100%;
+  left: 30px;
+  top:0;
+  opacity: 0;
+  filter: blur(30px);
+  transform: translateX(-100px) skewX(-15deg);
+}
+
+button:hover{
+  background:#F04A58;
+  cursor: pointer;
+}
+
+button:hover:before{
+  transform: translateX(300px) skewX(-15deg);
+  opacity: .6;
+  transition: .7s;
+}
+button:hover:after{
+  transform: translateX(300px) skewX(-15deg);
+  opacity: 1;
+  transition: .7s;
+}
+
+.btn{
+  content: '';
+  display: block;
+  position: absolute;
+  background: #F04A58;
+  width: 150px;
+  height: 150px;
+  border: none;
+  border-radius: 150px;
+  margin-top: 270px;
+  left: 50%;
+  font-size: 20px;
+}
+
+.btn > p{
+  font-size: 30px;
+  text-decoration: underline;
+  margin-bottom: 50px;
+}
+
+img{
+  margin-left: 60%;
+  margin-top: 220px;
+}
+
+/*Section two*/
+
+.sectionTwo{
+  background-color: #F04A58;
+  margin-top: 350px;
+  margin-left: -100px;
+  margin-right: 100px;
+}
